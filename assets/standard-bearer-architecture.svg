@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#26384a"/>
+  </marker>
+</defs>
+<style>
+  text { font-family: Arial, sans-serif; fill:#17243a; }
+  .title { font-size:34px; font-weight:700; }
+  .head { font-size:24px; font-weight:700; }
+  .body { font-size:18px; }
+  .small { font-size:16px; }
+  .box { fill:#ffffff; stroke:#26384a; stroke-width:3; rx:18; }
+  .soft { fill:#eef3f6; stroke:#46667f; stroke-width:3; rx:18; }
+  .line { stroke:#26384a; stroke-width:4; fill:none; marker-end:url(#arrow); }
+  .planned { fill:#ffffff; stroke:#46667f; stroke-width:3; stroke-dasharray:12 8; rx:18; }
+  .planned-line { stroke:#46667f; stroke-width:4; stroke-dasharray:10 8; fill:none; marker-end:url(#arrow); }
+</style>
+<text x="700" y="52" text-anchor="middle" class="title">Standard Bearer - Architecture</text>
+
+<rect x="500" y="90" width="400" height="90" class="box"/>
+<text x="700" y="126" text-anchor="middle" class="head">AI AGENT</text>
+<text x="700" y="155" text-anchor="middle" class="body">OpenClaw is the first adapter</text>
+
+<path d="M650 180 L400 245" class="line"/>
+<path d="M750 180 L1000 245" class="planned-line"/>
+
+<rect x="180" y="245" width="440" height="125" class="soft"/>
+<text x="400" y="282" text-anchor="middle" class="head">SEMANTIC SENSOR</text>
+<text x="400" y="313" text-anchor="middle" class="body">OpenClaw adapter - working in the preview</text>
+<text x="400" y="342" text-anchor="middle" class="small">What the agent reports about itself</text>
+
+<rect x="780" y="245" width="440" height="125" class="planned"/>
+<text x="1000" y="282" text-anchor="middle" class="head">INDEPENDENT WITNESS</text>
+<text x="1000" y="313" text-anchor="middle" class="body">Not yet built</text>
+<text x="1000" y="342" text-anchor="middle" class="small">Outside the agent&apos;s trust boundary</text>
+
+<path d="M400 370 L610 445" class="line"/>
+<path d="M1000 370 L790 445" class="planned-line"/>
+
+<rect x="470" y="445" width="460" height="115" class="box"/>
+<text x="700" y="482" text-anchor="middle" class="head">AUTHORITY ENGINE</text>
+<text x="700" y="514" text-anchor="middle" class="body">Was the agent empowered to do it?</text>
+<text x="700" y="542" text-anchor="middle" class="small">Authority Map - Effective Authority - AEG</text>
+
+<path d="M700 560 L700 625" class="line"/>
+
+<rect x="420" y="625" width="560" height="115" class="soft"/>
+<text x="700" y="662" text-anchor="middle" class="head">EVIDENCE RECORD</text>
+<text x="700" y="694" text-anchor="middle" class="body">Append-only journal - replay - integrity - health</text>
+<text x="700" y="722" text-anchor="middle" class="small">Self-attested today; integrity is not completeness</text>
+
+<text x="700" y="785" text-anchor="middle" class="body" font-weight="700">AUTHORITY -> WITNESS -> EVIDENCE</text>
+</svg>
