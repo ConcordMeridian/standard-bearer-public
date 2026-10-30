@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/protocol" },
+    { "path": "packages/authority" },
+    { "path": "packages/sensor-openclaw" },
+    { "path": "packages/evidence" },
+    { "path": "packages/cli" }
+  ]
+}

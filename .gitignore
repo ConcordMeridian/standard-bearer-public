@@ -4,3 +4,5 @@ __MACOSX/
 .env.*
 *.log
 node_modules/
+packages/*/dist/
+coverage/

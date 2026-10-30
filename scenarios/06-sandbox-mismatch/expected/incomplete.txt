@@ -1,0 +1,31 @@
+STANDARD BEARER
+
+Agent
+  openclaw:coder
+
+Deployment
+  local-dev-incomplete (development)
+
+Authority Exposure Gap
+  UNKNOWN
+
+Observation Completeness
+  PARTIAL
+
+Unexpected Authority
+  NOT DETERMINABLE
+
+Declared Authority
+
+  Filesystem
+    /workspace           READ / WRITE
+
+Observed Effective Authority
+
+  Filesystem
+    /workspace           READ / WRITE
+
+Observer Health
+  DEGRADED
+  ! Required authority dimension unavailable: elevated-execution
+  ! Required authority dimension unavailable: network
