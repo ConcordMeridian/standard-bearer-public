@@ -1,0 +1,25 @@
+{
+  "id": "06-tightly-bounded",
+  "description": "Workspace-only deployment with shell and elevated execution denied and no effective network reach.",
+  "declaredAuthority": {
+    "capabilities": [
+      { "id": "filesystem:workspace", "kind": "filesystem", "resource": "/workspace", "access": ["read", "write"] }
+    ]
+  },
+  "snapshot": {
+    "agentId": "coder",
+    "deploymentId": "local-dev-bounded",
+    "environment": "development",
+    "capturedAt": "2026-09-24T18:00:00.000Z",
+    "sequenceStart": 1,
+    "configVersions": { "openclaw": "fixture-v0.2" },
+    "sandbox": { "mode": "enabled", "scope": "workspace" },
+    "workspaceAccess": "read-write",
+    "toolPolicy": { "allow": ["editor"], "deny": ["shell"] },
+    "elevatedExecution": false,
+    "executionTarget": "none",
+    "mounts": [],
+    "network": { "mode": "restricted", "destinations": [] }
+  },
+  "expectations": { "completeness": "complete", "aeg": "none", "unexpectedAuthority": [] }
+}

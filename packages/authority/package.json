@@ -1,0 +1,1 @@
+{"name":"@standard-bearer/authority","version":"0.1.0","type":"module","exports":"./dist/index.js","dependencies":{"@standard-bearer/protocol":"workspace:*"}}

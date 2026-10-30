@@ -1,0 +1,25 @@
+{
+  "name": "standard-bearer",
+  "private": true,
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ConcordMeridian/standard-bearer-public.git"
+  },
+  "packageManager": "pnpm@10.28.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "test": "tsc -b && node scripts/check-coverage.mjs",
+    "coverage": "node scripts/check-coverage.mjs",
+    "gate": "node scripts/publication-gate.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "^5.6.3"
+  }
+}

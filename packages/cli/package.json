@@ -1,0 +1,1 @@
+{"name":"@standard-bearer/cli","version":"0.1.0","type":"module","bin":{"standard-bearer":"dist/index.js"},"dependencies":{"@standard-bearer/authority":"workspace:*","@standard-bearer/evidence":"workspace:*","@standard-bearer/protocol":"workspace:*","@standard-bearer/sensor-openclaw":"workspace:*"}}

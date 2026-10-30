@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://standard-bearer.dev/schema/scenario.json",
+  "title": "Standard Bearer scenario fixture",
+  "type": "object",
+  "required": ["id", "description", "declaredAuthority", "snapshot", "expectations"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[0-9]{2}-[a-z0-9-]+$" },
+    "description": { "type": "string", "minLength": 1 },
+    "declaredAuthority": {
+      "type": "object",
+      "required": ["capabilities"],
+      "properties": { "capabilities": { "type": "array" } }
+    },
+    "snapshot": { "type": "object" },
+    "expectations": {
+      "type": "object",
+      "required": ["completeness", "aeg", "unexpectedAuthority"],
+      "additionalProperties": false,
+      "properties": {
+        "completeness": { "enum": ["complete", "partial", "unknown"] },
+        "aeg": { "enum": ["none", "high", "unknown"] },
+        "unexpectedAuthority": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

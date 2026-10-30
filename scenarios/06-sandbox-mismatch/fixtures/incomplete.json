@@ -1,0 +1,24 @@
+{
+  "id": "06-incomplete",
+  "description": "Workspace, broader filesystem, and shell dimensions are known while elevated execution and network remain unavailable.",
+  "declaredAuthority": {
+    "capabilities": [
+      { "id": "filesystem:workspace", "kind": "filesystem", "resource": "/workspace", "access": ["read", "write"] }
+    ]
+  },
+  "snapshot": {
+    "agentId": "coder",
+    "deploymentId": "local-dev-incomplete",
+    "environment": "development",
+    "capturedAt": "2026-09-24T18:02:00.000Z",
+    "sequenceStart": 1,
+    "configVersions": { "openclaw": "fixture-v0.2" },
+    "sandbox": { "mode": "enabled", "scope": "workspace" },
+    "workspaceAccess": "read-write",
+    "toolPolicy": { "allow": ["editor"], "deny": ["shell"] },
+    "executionTarget": "none",
+    "mounts": [],
+    "network": {}
+  },
+  "expectations": { "completeness": "partial", "aeg": "unknown", "unexpectedAuthority": [] }
+}

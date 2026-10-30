@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": ".",
+    "paths": {
+      "@standard-bearer/protocol": [
+        "packages/protocol/src/index.ts"
+      ],
+      "@standard-bearer/authority": [
+        "packages/authority/src/index.ts"
+      ],
+      "@standard-bearer/evidence": [
+        "packages/evidence/src/index.ts"
+      ],
+      "@standard-bearer/sensor-openclaw": [
+        "packages/sensor-openclaw/src/index.ts"
+      ]
+    },
+    "strict": true,
+    "target": "ES2022",
+    "verbatimModuleSyntax": true,
+    "ignoreDeprecations": "5.0"
+  }
+}

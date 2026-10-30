@@ -1,0 +1,29 @@
+{
+  "id": "06-unexpectedly-elevated",
+  "description": "Workspace-only declaration exceeded by host filesystem, shell, elevated execution, and unrestricted network authority.",
+  "declaredAuthority": {
+    "capabilities": [
+      { "id": "filesystem:workspace", "kind": "filesystem", "resource": "/workspace", "access": ["read", "write"] }
+    ]
+  },
+  "snapshot": {
+    "agentId": "coder",
+    "deploymentId": "local-dev-elevated",
+    "environment": "development",
+    "capturedAt": "2026-09-24T18:01:00.000Z",
+    "sequenceStart": 1,
+    "configVersions": { "openclaw": "fixture-v0.2" },
+    "sandbox": { "mode": "permissive", "scope": "host" },
+    "workspaceAccess": "read-write",
+    "toolPolicy": { "allow": ["shell"], "deny": [] },
+    "elevatedExecution": true,
+    "executionTarget": "host",
+    "mounts": [{ "path": "/home/user", "access": "read-only" }],
+    "network": { "mode": "unrestricted", "destinations": [] }
+  },
+  "expectations": {
+    "completeness": "complete",
+    "aeg": "high",
+    "unexpectedAuthority": ["filesystem:/home/user:read", "execution:shell", "execution:elevated", "network:internet:unrestricted"]
+  }
+}

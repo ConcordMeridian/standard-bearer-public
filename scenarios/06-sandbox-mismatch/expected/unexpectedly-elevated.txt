@@ -1,0 +1,37 @@
+STANDARD BEARER
+
+Agent
+  openclaw:coder
+
+Deployment
+  local-dev-elevated (development)
+
+Authority Exposure Gap
+  HIGH
+
+Observation Completeness
+  COMPLETE
+
+Unexpected Authority
+  + /home/user READ
+  + shell execution
+  + elevated execution
+  + unrestricted network
+
+Declared Authority
+
+  Filesystem
+    /workspace           READ / WRITE
+
+Observed Effective Authority
+
+  Filesystem
+    /workspace           READ / WRITE
+    /home/user           READ
+
+  Execution
+    shell                ALLOWED
+    elevated             ALLOWED
+
+  Network
+    internet             UNRESTRICTED

@@ -1,0 +1,26 @@
+STANDARD BEARER
+
+Agent
+  openclaw:coder
+
+Deployment
+  local-dev-bounded (development)
+
+Authority Exposure Gap
+  NONE
+
+Observation Completeness
+  COMPLETE
+
+Unexpected Authority
+  NONE
+
+Declared Authority
+
+  Filesystem
+    /workspace           READ / WRITE
+
+Observed Effective Authority
+
+  Filesystem
+    /workspace           READ / WRITE
